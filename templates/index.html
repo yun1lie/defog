@@ -15,6 +15,7 @@
           .getUserMedia({ video: true })
           .then(function (stream) {
             // 将视频流绑定到video标签上
+            console.log(stream);
             var video = document.getElementById("video");
             video.srcObject = stream;
             video.play();
