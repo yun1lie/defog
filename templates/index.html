@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>腹腔镜图像去雾系统</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>腹腔镜图像去雾系统</h1>
+    <div class="controls">
+      <label for="camera-select">选择摄像头：</label>
+      <select id="camera-select">
+        <option value="camera1">摄像头1</option>
+        <option value="camera2">摄像头2</option>
+      </select>
+      <button id="refresh-button">刷新</button>
+    </div>
+    <div class="image-container">
+      <img id="image" />
+    </div>
+    <div class="adjustment-controls">
+      <label>亮度：</label>
+      <input
+        type="range"
+        min="-100"
+        max="100"
+        value="0"
+        id="brightness-slider"
+      />
+      <label>对比度：</label>
+      <input type="range" min="-100" max="100" value="0" id="contrast-slider" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
